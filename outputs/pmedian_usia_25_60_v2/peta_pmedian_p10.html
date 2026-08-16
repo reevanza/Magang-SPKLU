@@ -1,0 +1,2997 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_564d2a2895cb51596d526e54bbee0425 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_564d2a2895cb51596d526e54bbee0425" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_564d2a2895cb51596d526e54bbee0425 = L.map(
+                "map_564d2a2895cb51596d526e54bbee0425",
+                {
+                    center: [-6.920664204744029, 107.62896049717395],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_372a57f3dc0385bf1f59c726af5dd214 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_372a57f3dc0385bf1f59c726af5dd214.addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            var circle_marker_8fe33001fda188e131125efaefd733b4 = L.circleMarker(
+                [-6.930279367302748, 107.69933354976428],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2739817052610274, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_8fe33001fda188e131125efaefd733b4.bindTooltip(
+                `<div>
+                     MEKAR MULYA | Bobot EV: 20.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57879cecb69dc7e3007f3b8f33a983c0 = L.circleMarker(
+                [-6.931087491281211, 107.70914277190974],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_57879cecb69dc7e3007f3b8f33a983c0.bindTooltip(
+                `<div>
+                     CIPADUNG WETAN | Bobot EV: 9.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_250dd0710545bc3448519f2247fa63f8 = L.circleMarker(
+                [-6.941732630888714, 107.71162150838886],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2197840966944056, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_250dd0710545bc3448519f2247fa63f8.bindTooltip(
+                `<div>
+                     CIPADUNG KIDUL | Bobot EV: 41.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9935cc095da3fbe2fc0d8e6d6171a4eb = L.circleMarker(
+                [-6.9044882953046125, 107.69002567036019],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3988154988948867, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_9935cc095da3fbe2fc0d8e6d6171a4eb.bindTooltip(
+                `<div>
+                     PASIR ENDAH | Bobot EV: 46.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5405421dd569651a77d56b20233e33c0 = L.circleMarker(
+                [-6.9003927463723045, 107.70608716473589],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4746900217302303, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_5405421dd569651a77d56b20233e33c0.bindTooltip(
+                `<div>
+                     PASIR WANGI | Bobot EV: 48.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_390e75abd1263c5e1baf74c570e2254c = L.circleMarker(
+                [-6.902483699296091, 107.7118263768544],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4821133086669613, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_390e75abd1263c5e1baf74c570e2254c.bindTooltip(
+                `<div>
+                     PASIRJATI | Bobot EV: 48.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3a0154065974f721b836556d9825af4 = L.circleMarker(
+                [-6.913613055782273, 107.72266917673537],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.869341448984356, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_f3a0154065974f721b836556d9825af4.bindTooltip(
+                `<div>
+                     PALASARI | Bobot EV: 59.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_556d4827b63bd4151c9b4b6f0e1f0aed = L.circleMarker(
+                [-6.909573995298542, 107.72272723731888],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1410736513116, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_556d4827b63bd4151c9b4b6f0e1f0aed.bindTooltip(
+                `<div>
+                     CISURUPAN | Bobot EV: 39.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f147f46c5bc09d8faa598f2fd3119342 = L.circleMarker(
+                [-6.921340966055211, 107.70415631520866],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0703426704942296, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_f147f46c5bc09d8faa598f2fd3119342.bindTooltip(
+                `<div>
+                     CIPADUNG KULON | Bobot EV: 37.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6d3004a016c6c9c6d039247ca3fdc8a = L.circleMarker(
+                [-6.919531299646901, 107.72452846474926],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.324925409870479, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_e6d3004a016c6c9c6d039247ca3fdc8a.bindTooltip(
+                `<div>
+                     PASIR BIRU | Bobot EV: 44.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_835b5c0553e2db5779243781d6ece7f6 = L.circleMarker(
+                [-6.923120400247722, 107.71903933248768],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.9243608717516794, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_835b5c0553e2db5779243781d6ece7f6.bindTooltip(
+                `<div>
+                     CIPADUNG | Bobot EV: 61.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9be5059daac9a8ea0ce717145efd992b = L.circleMarker(
+                [-6.91010027200731, 107.7149891220006],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7425328577212187, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_9be5059daac9a8ea0ce717145efd992b.bindTooltip(
+                `<div>
+                     PASANGGRAHAN | Bobot EV: 56.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c208c1e4ea423d9d0f3e90ecd5bdb46d = L.circleMarker(
+                [-6.933321883428644, 107.57652467011712],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.72584088052618, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_c208c1e4ea423d9d0f3e90ecd5bdb46d.bindTooltip(
+                `<div>
+                     BABAKAN | Bobot EV: 89.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa648638b420a04824b7fc5b5679006f = L.circleMarker(
+                [-6.931130598206347, 107.59377682574305],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3794060540577164, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_aa648638b420a04824b7fc5b5679006f.bindTooltip(
+                `<div>
+                     BABAKAN ASIH | Bobot EV: 45.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25bed236a07ba87a4f284b7cdcfd4473 = L.circleMarker(
+                [-6.9437107627709596, 107.57934465371123],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.929714470454483, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_25bed236a07ba87a4f284b7cdcfd4473.bindTooltip(
+                `<div>
+                     BABAKAN CIPARAY | Bobot EV: 97.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c76a479cfde9cdc2953e5943ccfdc7d = L.circleMarker(
+                [-6.9330950900305925, 107.57052673406471],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5737419707977396, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_3c76a479cfde9cdc2953e5943ccfdc7d.bindTooltip(
+                `<div>
+                     CARINGIN | Bobot EV: 26.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d63249865b03be41219e64f5e9b2f989 = L.circleMarker(
+                [-6.923204553528991, 107.5956841233943],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.036057522542358, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_d63249865b03be41219e64f5e9b2f989.bindTooltip(
+                `<div>
+                     CIBADAK | Bobot EV: 36.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d50f894d74ecfd9397da5d0b9742a2f6 = L.circleMarker(
+                [-6.9537278227457655, 107.59523616467173],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1147202425935903, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_d50f894d74ecfd9397da5d0b9742a2f6.bindTooltip(
+                `<div>
+                     CIBADUYUT | Bobot EV: 38.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b86be2689963da4280fec30f07762bb1 = L.circleMarker(
+                [-6.958605888740115, 107.5910245678213],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6040904937000917, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_b86be2689963da4280fec30f07762bb1.bindTooltip(
+                `<div>
+                     CIBADUYUT KIDUL | Bobot EV: 27.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0dcdb340568b15fcab52a85a64ab5c26 = L.circleMarker(
+                [-6.9585292302409485, 107.59774595172476],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5149782637922367, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_0dcdb340568b15fcab52a85a64ab5c26.bindTooltip(
+                `<div>
+                     CIBADUYUT WETAN | Bobot EV: 25.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b6f56ff207e06111789dc98f4b207b7 = L.circleMarker(
+                [-6.920924014802864, 107.5726366353828],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.621508333533969, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_0b6f56ff207e06111789dc98f4b207b7.bindTooltip(
+                `<div>
+                     CIBUNTU | Bobot EV: 52.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4684107a9cf71366d4a8cd7f4f90520 = L.circleMarker(
+                [-6.936422267889966, 107.5623173730252],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.881201471043924, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_e4684107a9cf71366d4a8cd7f4f90520.bindTooltip(
+                `<div>
+                     CIGONDEWAH KALER | Bobot EV: 60.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da289e360208522de2c1f7f87097e1e4 = L.circleMarker(
+                [-6.9430057559349665, 107.56052729629106],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6420399336958407, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_da289e360208522de2c1f7f87097e1e4.bindTooltip(
+                `<div>
+                     CIGONDEWAH KIDUL | Bobot EV: 27.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f76ae17b564ff1d64ecd44324f0ea349 = L.circleMarker(
+                [-6.947251724841393, 107.56520556632901],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.780525438000933, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_f76ae17b564ff1d64ecd44324f0ea349.bindTooltip(
+                `<div>
+                     CIGONDEWAH RAHAYU | Bobot EV: 30.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5db0baba083bf945c6d5735cc613c326 = L.circleMarker(
+                [-6.920006850722061, 107.56749025350913],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.154837657505991, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_5db0baba083bf945c6d5735cc613c326.bindTooltip(
+                `<div>
+                     CIJERAH | Bobot EV: 69.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_30a08d7012acb1d82224eb0c44c8efe1 = L.circleMarker(
+                [-6.9566272641513445, 107.58604888255785],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.9163879057654327, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_30a08d7012acb1d82224eb0c44c8efe1.bindTooltip(
+                `<div>
+                     CIRANGRANG | Bobot EV: 34.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3e4c90c59a657911407cf41ffe2e6b3 = L.circleMarker(
+                [-6.931698085326967, 107.55341258391765],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.93883648433589, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_f3e4c90c59a657911407cf41ffe2e6b3.bindTooltip(
+                `<div>
+                     GEMPOL SARI | Bobot EV: 62.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0698ffa14e35bc7a391b45e3103857b5 = L.circleMarker(
+                [-6.9235575927742845, 107.5886289607032],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.388324432928064, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_0698ffa14e35bc7a391b45e3103857b5.bindTooltip(
+                `<div>
+                     JAMIKA | Bobot EV: 77.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e1e63590cdecc056f6692509c872bbd = L.circleMarker(
+                [-6.923749784484827, 107.60134203219103],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.119747323548196, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_7e1e63590cdecc056f6692509c872bbd.bindTooltip(
+                `<div>
+                     KARANG ANYAR | Bobot EV: 18.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35d9891f38df7fdc8e83630c9f94a586 = L.circleMarker(
+                [-6.952168796153546, 107.60982185335995],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.054123775581178, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_35d9891f38df7fdc8e83630c9f94a586.bindTooltip(
+                `<div>
+                     KARASAK | Bobot EV: 37.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6026e64ac6e3509963d05b0a506e5e72 = L.circleMarker(
+                [-6.946669375925133, 107.5995376039204],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.1169634197584735, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_6026e64ac6e3509963d05b0a506e5e72.bindTooltip(
+                `<div>
+                     KEBON LEGA | Bobot EV: 67.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e277c4338cabdd584eb0e87616bbb42a = L.circleMarker(
+                [-6.941451516580985, 107.58806675817318],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.726810190156446, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_e277c4338cabdd584eb0e87616bbb42a.bindTooltip(
+                `<div>
+                     KOPO | Bobot EV: 89.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_166217d8359d88754900201e91e951f0 = L.circleMarker(
+                [-6.946400690063406, 107.57504403534016],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.063116148548653, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_166217d8359d88754900201e91e951f0.bindTooltip(
+                `<div>
+                     MARGAHAYU UTARA | Bobot EV: 66.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_832079e2142c76a061c4e7accf771621 = L.circleMarker(
+                [-6.954879878947671, 107.57652689739963],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.972373323560348, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_832079e2142c76a061c4e7accf771621.bindTooltip(
+                `<div>
+                     MARGASUKA | Bobot EV: 35.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_522474c783204eb77ee9cff5b6199004 = L.circleMarker(
+                [-6.955428542141945, 107.60544194526364],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.811397699694081, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_522474c783204eb77ee9cff5b6199004.bindTooltip(
+                `<div>
+                     MEKAR WANGI | Bobot EV: 31.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2a839c3c4ff0ee3271efcfb7f74d7cc = L.circleMarker(
+                [-6.931004674597505, 107.60174394849616],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.897856117429317, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_c2a839c3c4ff0ee3271efcfb7f74d7cc.bindTooltip(
+                `<div>
+                     NYENGSERET | Bobot EV: 33.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6fb5f38286b7cad8a67feb3482b3e4ab = L.circleMarker(
+                [-6.930455767373888, 107.59845695116512],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.272085694252288, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_6fb5f38286b7cad8a67feb3482b3e4ab.bindTooltip(
+                `<div>
+                     PANJUNAN | Bobot EV: 20.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b2234e818c72a1c9ae874c09100a4af = L.circleMarker(
+                [-6.940671166767866, 107.60327658889842],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.725923562349976, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_4b2234e818c72a1c9ae874c09100a4af.bindTooltip(
+                `<div>
+                     PELINDUNG HEWAN | Bobot EV: 55.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22d70b288ab1569b726bd2ea565f4be3 = L.circleMarker(
+                [-6.9394229751831915, 107.59653197972787],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8875264246596006, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_22d70b288ab1569b726bd2ea565f4be3.bindTooltip(
+                `<div>
+                     SITUSAEUR | Bobot EV: 60.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19ea557154fb0e9456da84242fc7b4a1 = L.circleMarker(
+                [-6.932495339061774, 107.58879653741656],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7319949561344052, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_19ea557154fb0e9456da84242fc7b4a1.bindTooltip(
+                `<div>
+                     SUKA ASIH | Bobot EV: 55.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07d394304fce12dea6f50c373fc4fa9f = L.circleMarker(
+                [-6.926960228197505, 107.5832068470405],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.718220365974626, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_07d394304fce12dea6f50c373fc4fa9f.bindTooltip(
+                `<div>
+                     SUKAHAJI | Bobot EV: 89.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8acc284c9768a784343e2bcee222fec7 = L.circleMarker(
+                [-6.9259391357887, 107.5766429098462],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.915401693981672, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_8acc284c9768a784343e2bcee222fec7.bindTooltip(
+                `<div>
+                     WARUNG MUNCANG | Bobot EV: 61.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0368a1ea9d7eca8c53593fe4d607eb53 = L.circleMarker(
+                [-6.957607316002734, 107.61707858065542],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.3254287028340883, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_0368a1ea9d7eca8c53593fe4d607eb53.bindTooltip(
+                `<div>
+                     WATES | Bobot EV: 21.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27c875077181cc07a22e7e7618475092 = L.circleMarker(
+                [-6.9588891308223575, 107.62978488998559],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7332199982047936, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_27c875077181cc07a22e7e7618475092.bindTooltip(
+                `<div>
+                     MENGGER | Bobot EV: 29.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa7b570803bc5b8b256728b2b04d09cd = L.circleMarker(
+                [-6.95594405552687, 107.6479534372812],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.378970044949736, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_fa7b570803bc5b8b256728b2b04d09cd.bindTooltip(
+                `<div>
+                     CIJAURA | Bobot EV: 76.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf00aa898320e930cea1e2b181cab7e1 = L.circleMarker(
+                [-6.946000978083101, 107.65232818501798],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.118314124332694, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_bf00aa898320e930cea1e2b181cab7e1.bindTooltip(
+                `<div>
+                     SEKEJATI | Bobot EV: 67.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8010bf151d22f2d6b877ac5939a5234c = L.circleMarker(
+                [-6.959843232571198, 107.6431871343524],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8605947993649448, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_8010bf151d22f2d6b877ac5939a5234c.bindTooltip(
+                `<div>
+                     KUJANGSARI | Bobot EV: 59.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1375eb5386bb978b8074762719aa702a = L.circleMarker(
+                [-6.952303254112856, 107.63082621047971],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6298298557750095, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_1375eb5386bb978b8074762719aa702a.bindTooltip(
+                `<div>
+                     BATUNUNGGAL | Bobot EV: 52.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6b2acf5c52c3c19a56233d126e1ecfe = L.circleMarker(
+                [-6.9357281505030155, 107.66362469217566],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4727202190953994, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_f6b2acf5c52c3c19a56233d126e1ecfe.bindTooltip(
+                `<div>
+                     JATI SARI | Bobot EV: 24.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc7ce651e837527c1a1ccab2780d6152 = L.circleMarker(
+                [-6.9509414127764595, 107.61240664541111],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4946304674757824, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_bc7ce651e837527c1a1ccab2780d6152.bindTooltip(
+                `<div>
+                     CISEUREUH | Bobot EV: 48.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4f31b0aa4a2b2871c8c29011fd9a4dc = L.circleMarker(
+                [-6.916583608193658, 107.6408298880305],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.247521150617548, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_e4f31b0aa4a2b2871c8c29011fd9a4dc.bindTooltip(
+                `<div>
+                     KEBON WARU | Bobot EV: 42.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_766c91f707470f6ebb4dc2625c188512 = L.circleMarker(
+                [-6.91730714360101, 107.63229392190465],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.586707289598139, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_766c91f707470f6ebb4dc2625c188512.bindTooltip(
+                `<div>
+                     KACAPIRING | Bobot EV: 26.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b6982eaff6bfba4b7f6b88e0bc5b8e7 = L.circleMarker(
+                [-6.926411287443783, 107.63953670363529],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.556512894749836, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_9b6982eaff6bfba4b7f6b88e0bc5b8e7.bindTooltip(
+                `<div>
+                     MALEER | Bobot EV: 50.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc87f873d3d30660649735b0e41bbfd6 = L.circleMarker(
+                [-6.9216924850574895, 107.62801625817065],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.132238141011526, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_fc87f873d3d30660649735b0e41bbfd6.bindTooltip(
+                `<div>
+                     SAMOJA | Bobot EV: 39.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ae3244e2969228d9ccedefb833f5540 = L.circleMarker(
+                [-6.924078128250306, 107.63328616370666],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6602155033328403, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_7ae3244e2969228d9ccedefb833f5540.bindTooltip(
+                `<div>
+                     CIBANGKONG | Bobot EV: 53.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6b25de07378715635354b0c884379f3 = L.circleMarker(
+                [-6.934460828824326, 107.60814871324575],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.3119727220540236, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_f6b25de07378715635354b0c884379f3.bindTooltip(
+                `<div>
+                     CIATEUL | Bobot EV: 21.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35ae0370ab4e89931f5c9fe4a7eaf526 = L.circleMarker(
+                [-6.929775296832337, 107.60712901017453],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.3178293385595787, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_35ae0370ab4e89931f5c9fe4a7eaf526.bindTooltip(
+                `<div>
+                     PUNGKUR | Bobot EV: 21.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dde5ca511c3fdde079d29dd236d6474f = L.circleMarker(
+                [-6.940457795601076, 107.61024982389802],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.9614637195362414, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_dde5ca511c3fdde079d29dd236d6474f.bindTooltip(
+                `<div>
+                     CIGERELENG | Bobot EV: 35.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_161729dcbaf74376655d6201ed33a1de = L.circleMarker(
+                [-6.939456946983045, 107.6299390805262],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3783822103731427, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_161729dcbaf74376655d6201ed33a1de.bindTooltip(
+                `<div>
+                     TURANGGA | Bobot EV: 45.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_afc247110be8d5dcf59b2bb3ada9c7a7 = L.circleMarker(
+                [-6.929146755479925, 107.62956042894477],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.692170103276905, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_afc247110be8d5dcf59b2bb3ada9c7a7.bindTooltip(
+                `<div>
+                     LINGKAR SELATAN | Bobot EV: 29.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_220a2ace7b938ca23f2b64d14da48fcc = L.circleMarker(
+                [-6.926738651312882, 107.60684029232522],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.418615123577635, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_220a2ace7b938ca23f2b64d14da48fcc.bindTooltip(
+                `<div>
+                     BALONG GEDE | Bobot EV: 23.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2b1da4c5cddd4635f2199249a24bac1 = L.circleMarker(
+                [-6.940744146039131, 107.61613903415595],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.892842477303437, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_d2b1da4c5cddd4635f2199249a24bac1.bindTooltip(
+                `<div>
+                     ANCOL | Bobot EV: 33.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_446550add14d9a1f1d9ce086728c32b9 = L.circleMarker(
+                [-6.945155284604725, 107.6198895902603],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5540536173954083, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_446550add14d9a1f1d9ce086728c32b9.bindTooltip(
+                `<div>
+                     PASIRLUYU | Bobot EV: 50.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72b6a5b43c2519068671d03811166468 = L.circleMarker(
+                [-6.929643047937562, 107.61795744519719],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6474603467420263, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_72b6a5b43c2519068671d03811166468.bindTooltip(
+                `<div>
+                     BURANGRANG | Bobot EV: 28.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a120c3b3d8982c74b7e3cadbc3cbe0f7 = L.circleMarker(
+                [-6.926635712774558, 107.6114830317591],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5514968150211486, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_a120c3b3d8982c74b7e3cadbc3cbe0f7.bindTooltip(
+                `<div>
+                     CIKAWAO | Bobot EV: 26.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2e8755fbefd9203961fc309426afbc9 = L.circleMarker(
+                [-6.937572685504906, 107.6370229094278],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7850219301567614, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_d2e8755fbefd9203961fc309426afbc9.bindTooltip(
+                `<div>
+                     GUMURUH | Bobot EV: 57.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58195e10f944d7430ee16121bcee5eb5 = L.circleMarker(
+                [-6.938332194852909, 107.6405229147826],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.749404124433334, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_58195e10f944d7430ee16121bcee5eb5.bindTooltip(
+                `<div>
+                     BINONG | Bobot EV: 56.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abffc5a93ff0cbece08ec73b9577d9c5 = L.circleMarker(
+                [-6.927190498193811, 107.64324187842686],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.683643536636249, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_abffc5a93ff0cbece08ec73b9577d9c5.bindTooltip(
+                `<div>
+                     KEBON GEDANG | Bobot EV: 28.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a9dfa2a1523bf82f32bf0160817770cb = L.circleMarker(
+                [-6.942256112111248, 107.6247462407551],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.9608560659694456, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_a9dfa2a1523bf82f32bf0160817770cb.bindTooltip(
+                `<div>
+                     CIJAGRA | Bobot EV: 35.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8b86b83c22204a63c7b5e867d54bc31 = L.circleMarker(
+                [-6.926626690031632, 107.62154008978709],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4638489635753733, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_b8b86b83c22204a63c7b5e867d54bc31.bindTooltip(
+                `<div>
+                     MALABAR | Bobot EV: 24.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a112178eae1e51299924ead15555a966 = L.circleMarker(
+                [-6.925197061965265, 107.61454848420469],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.1002030883947564, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_a112178eae1e51299924ead15555a966.bindTooltip(
+                `<div>
+                     PALEDANG | Bobot EV: 17.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f092234075bb8ffc12a45dd7a8b733e = L.circleMarker(
+                [-6.960738384625823, 107.68165110237062],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6412029878338292, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_8f092234075bb8ffc12a45dd7a8b733e.bindTooltip(
+                `<div>
+                     DERWATI | Bobot EV: 53.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_268d940ccb59022e9995fa1b3f13792c = L.circleMarker(
+                [-6.961686080807024, 107.66408568387342],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.686621523353852, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_268d940ccb59022e9995fa1b3f13792c.bindTooltip(
+                `<div>
+                     MEKARJAYA | Bobot EV: 54.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9da1db7b4b1a99f3f51902d3e611c47d = L.circleMarker(
+                [-6.919186457018294, 107.61794988371615],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.980873816413349, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_9da1db7b4b1a99f3f51902d3e611c47d.bindTooltip(
+                `<div>
+                     KEBON PISANG | Bobot EV: 35.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e72d278e06a406a1ec2d16a03566be1 = L.circleMarker(
+                [-6.918170225255437, 107.6083628194888],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.117992061992508, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_4e72d278e06a406a1ec2d16a03566be1.bindTooltip(
+                `<div>
+                     BRAGA | Bobot EV: 17.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7fed3c5ce84f767ba44604a9ceafefd5 = L.circleMarker(
+                [-6.913673838807789, 107.62137207226543],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.020302742298721, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_7fed3c5ce84f767ba44604a9ceafefd5.bindTooltip(
+                `<div>
+                     MERDEKA | Bobot EV: 36.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_504b6e7224132811a74ce6b86529f941 = L.circleMarker(
+                [-6.9082405614218025, 107.63388956720533],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.8592429950014235, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_504b6e7224132811a74ce6b86529f941.bindTooltip(
+                `<div>
+                     SUKAMAJU | Bobot EV: 32.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f0bdfe0be5d8bfb3b485f27e39e6b15 = L.circleMarker(
+                [-6.9084025154603115, 107.62508938217431],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_8f0bdfe0be5d8bfb3b485f27e39e6b15.bindTooltip(
+                `<div>
+                     CIHAPIT | Bobot EV: 12.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_413a7decdd99d189ad6aedb8dfcd3de0 = L.circleMarker(
+                [-6.90471850561719, 107.61654117199924],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_413a7decdd99d189ad6aedb8dfcd3de0.bindTooltip(
+                `<div>
+                     CITARUM | Bobot EV: 6.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5908e4a1500ac37c71979cbf715a4f69 = L.circleMarker(
+                [-6.902284667780291, 107.6302132996045],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.084410787720099, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_5908e4a1500ac37c71979cbf715a4f69.bindTooltip(
+                `<div>
+                     CIHAURGEULIS | Bobot EV: 38.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e5b5227343a5d0307d67260867bccd2 = L.circleMarker(
+                [-6.901511283324232, 107.60715722644835],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.046405460440594, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_7e5b5227343a5d0307d67260867bccd2.bindTooltip(
+                `<div>
+                     TAMAN SARI | Bobot EV: 65.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b2e1ade86c12c879f5fb5dd58b4b24fc = L.circleMarker(
+                [-6.895935608246431, 107.62990594129118],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.453753956761391, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_b2e1ade86c12c879f5fb5dd58b4b24fc.bindTooltip(
+                `<div>
+                     SUKALUYU | Bobot EV: 47.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f18c72c084b2aa57c973b28b740a1026 = L.circleMarker(
+                [-6.894910026881758, 107.64698539445186],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.11294914882937, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_f18c72c084b2aa57c973b28b740a1026.bindTooltip(
+                `<div>
+                     SUKAPADA | Bobot EV: 67.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03167aaa8004011d30c8665d8dec06d8 = L.circleMarker(
+                [-6.894422996674174, 107.63868610830919],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6669341150172823, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_03167aaa8004011d30c8665d8dec06d8.bindTooltip(
+                `<div>
+                     NEGLASARI | Bobot EV: 28.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d47b3f0723a8dec0bf4fa6a299603a49 = L.circleMarker(
+                [-6.891725322141247, 107.60963180660167],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_d47b3f0723a8dec0bf4fa6a299603a49.bindTooltip(
+                `<div>
+                     LEBAK SILIWANGI | Bobot EV: 11.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_174b23256ad514715ccdf914fd368b3a = L.circleMarker(
+                [-6.892952054261219, 107.65896852448176],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.071346638720056, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_174b23256ad514715ccdf914fd368b3a.bindTooltip(
+                `<div>
+                     PASIRLAYUNG | Bobot EV: 66.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_77702162e82519268cfdbad9dc5f3fb4 = L.circleMarker(
+                [-6.8913857753415035, 107.61682724978381],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.8225552273004832, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_77702162e82519268cfdbad9dc5f3fb4.bindTooltip(
+                `<div>
+                     LEBAK GEDE | Bobot EV: 31.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_517c04b1d6145860f43d3f0346698db4 = L.circleMarker(
+                [-6.891520992968919, 107.60426176019149],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.941735825711224, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_517c04b1d6145860f43d3f0346698db4.bindTooltip(
+                `<div>
+                     CIPAGANTI | Bobot EV: 34.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9769f67c9df99eb3fd080af4f7415db1 = L.circleMarker(
+                [-6.887136308531928, 107.62057604711642],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.428798316273171, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_9769f67c9df99eb3fd080af4f7415db1.bindTooltip(
+                `<div>
+                     SEKELOA | Bobot EV: 78.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f0f0d2690fa252c1fe55ad5372d94bc = L.circleMarker(
+                [-6.879421384465219, 107.62542143260681],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.9165219813496455, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_1f0f0d2690fa252c1fe55ad5372d94bc.bindTooltip(
+                `<div>
+                     CIGADUNG | Bobot EV: 96.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_deac7656d3df1ffeacd943e58166f3a7 = L.circleMarker(
+                [-6.874852744345749, 107.60168344291769],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.834959549284354, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_deac7656d3df1ffeacd943e58166f3a7.bindTooltip(
+                `<div>
+                     HEGARMANAH | Bobot EV: 58.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb3359725cdfff41fc5b22e7d9b35d95 = L.circleMarker(
+                [-6.873422147836512, 107.615725514921],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.074661500248242, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_bb3359725cdfff41fc5b22e7d9b35d95.bindTooltip(
+                `<div>
+                     DAGO | Bobot EV: 103.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_937cdf8ce584a273e8705513f7bffab3 = L.circleMarker(
+                [-6.862163043828242, 107.61266561875512],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.229120199705013, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_937cdf8ce584a273e8705513f7bffab3.bindTooltip(
+                `<div>
+                     CIUMBULEUIT | Bobot EV: 71.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_229bf79f785a17d04b34185935d50ac1 = L.circleMarker(
+                [-6.854224420979228, 107.59871321586158],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.809738451854913, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_229bf79f785a17d04b34185935d50ac1.bindTooltip(
+                `<div>
+                     LEDENG | Bobot EV: 31.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f5e3ac4591c0b2edc15333fdb640e07 = L.circleMarker(
+                [-6.892932237258518, 107.62560790756643],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.42508809102215, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_5f5e3ac4591c0b2edc15333fdb640e07.bindTooltip(
+                `<div>
+                     SADANG SERANG | Bobot EV: 78.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea71476b072196df02f98ff377f9cd23 = L.circleMarker(
+                [-6.904265790281527, 107.64781413570637],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5792723240444277, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_ea71476b072196df02f98ff377f9cd23.bindTooltip(
+                `<div>
+                     PADASUKA | Bobot EV: 51.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78ae6ac103da2cbbe76280b23bb4c0f7 = L.circleMarker(
+                [-6.903656873539358, 107.64089229751795],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.086165773916776, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_78ae6ac103da2cbbe76280b23bb4c0f7.bindTooltip(
+                `<div>
+                     CIKUTRA | Bobot EV: 66.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15dbf77ae7f5352664ffe7082fc9323e = L.circleMarker(
+                [-6.906177614431019, 107.63705823230363],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4309081278842064, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_15dbf77ae7f5352664ffe7082fc9323e.bindTooltip(
+                `<div>
+                     CICADAS | Bobot EV: 47.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d998367c833ca99628ec0f26c4ad05b7 = L.circleMarker(
+                [-6.911263689872939, 107.60830597164684],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4885910923865953, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_d998367c833ca99628ec0f26c4ad05b7.bindTooltip(
+                `<div>
+                     BABAKAN CIAMIS | Bobot EV: 24.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d547d2f80afdd89e55f1e5256900d4fc = L.circleMarker(
+                [-6.917630078248118, 107.59875708794647],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.8068077600228896, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_d547d2f80afdd89e55f1e5256900d4fc.bindTooltip(
+                `<div>
+                     KEBON JERUK | Bobot EV: 31.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f3e0d6931d6410661e8141068dab76c = L.circleMarker(
+                [-6.915239387967341, 107.59103697722844],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7385700595201685, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_8f3e0d6931d6410661e8141068dab76c.bindTooltip(
+                `<div>
+                     CIROYOM | Bobot EV: 55.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f525a78e7771166a3756ac622888ec7 = L.circleMarker(
+                [-6.9133814225228525, 107.58010712428347],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.612588622558007, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_1f525a78e7771166a3756ac622888ec7.bindTooltip(
+                `<div>
+                     DUNGUS CARIANG | Bobot EV: 52.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31d097259d74797e6f474e463e30e8f7 = L.circleMarker(
+                [-6.910331439618991, 107.59347922652036],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.9967928092669807, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_31d097259d74797e6f474e463e30e8f7.bindTooltip(
+                `<div>
+                     ARJUNA | Bobot EV: 35.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f61d4279fce40bd4dbf19ed10aca93a = L.circleMarker(
+                [-6.911792620609436, 107.57550799898745],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.689129628433908, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_1f61d4279fce40bd4dbf19ed10aca93a.bindTooltip(
+                `<div>
+                     GARUDA | Bobot EV: 28.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72e94e37362bd7ef1d61efcdac51c1de = L.circleMarker(
+                [-6.909401433201359, 107.57135462403899],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7092518687515037, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_72e94e37362bd7ef1d61efcdac51c1de.bindTooltip(
+                `<div>
+                     MALEBER | Bobot EV: 55.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7cef29e6cd00ab51a033e0de4a29900f = L.circleMarker(
+                [-6.907391228686228, 107.60104549488042],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.517906760398874, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_7cef29e6cd00ab51a033e0de4a29900f.bindTooltip(
+                `<div>
+                     PASIRKALIKI | Bobot EV: 25.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_587029c3e0eea9e741367c9ecd529cdf = L.circleMarker(
+                [-6.901854925295533, 107.5940196902713],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.3234254110653225, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_587029c3e0eea9e741367c9ecd529cdf.bindTooltip(
+                `<div>
+                     PAMOYANAN | Bobot EV: 21.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4dc4dbe844e0aa4cb0494759563eac0 = L.circleMarker(
+                [-6.896346570396304, 107.59392202589373],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8914687067434732, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_f4dc4dbe844e0aa4cb0494759563eac0.bindTooltip(
+                `<div>
+                     SUKABUNGAH | Bobot EV: 60.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2031cff3cdcdc643917aba4963b5d613 = L.circleMarker(
+                [-6.899678235161334, 107.5881604987062],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3007893272042805, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_2031cff3cdcdc643917aba4963b5d613.bindTooltip(
+                `<div>
+                     PAJAJARAN | Bobot EV: 74.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69bffaf4a2b84bc48e49a062257904ce = L.circleMarker(
+                [-6.900786815849423, 107.56849779387024],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6280978857802872, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_69bffaf4a2b84bc48e49a062257904ce.bindTooltip(
+                `<div>
+                     CAMPAKA | Bobot EV: 52.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7f21c5995aa254e14bda2a25d4989b7 = L.circleMarker(
+                [-6.902356884743445, 107.57798245291568],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4199220261709824, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_c7f21c5995aa254e14bda2a25d4989b7.bindTooltip(
+                `<div>
+                     HUSEN SASTRANEGARA | Bobot EV: 46.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_947f7f5e8b25c6cca73ddeced3e044fc = L.circleMarker(
+                [-6.8928971243560015, 107.57109091100244],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.1431371932414365, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_947f7f5e8b25c6cca73ddeced3e044fc.bindTooltip(
+                `<div>
+                     SUKARAJA | Bobot EV: 68.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d471132476646fc55fe9bb71fe061f7 = L.circleMarker(
+                [-6.886566283455227, 107.57714888171294],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2174354372837666, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_6d471132476646fc55fe9bb71fe061f7.bindTooltip(
+                `<div>
+                     SUKAWARNA | Bobot EV: 41.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abb53ff8243a49a43c689dd659a5b2a8 = L.circleMarker(
+                [-6.8899567750009325, 107.59965066301127],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.621983607892609, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_abb53ff8243a49a43c689dd659a5b2a8.bindTooltip(
+                `<div>
+                     PASTEUR | Bobot EV: 52.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4265d81ba7ee98b92970bc3dd0b92bd3 = L.circleMarker(
+                [-6.885457655002021, 107.59384750413327],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.623358936946642, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_4265d81ba7ee98b92970bc3dd0b92bd3.bindTooltip(
+                `<div>
+                     CIPEDES | Bobot EV: 85.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61e6fb36ec3ac50e65fa9e366e73d4a2 = L.circleMarker(
+                [-6.886180197852431, 107.5861933894668],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.647600647599305, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_61e6fb36ec3ac50e65fa9e366e73d4a2.bindTooltip(
+                `<div>
+                     SUKAGALIH | Bobot EV: 53.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb532d82eddcd1b16a4a574d347f62ca = L.circleMarker(
+                [-6.874465526064706, 107.58589964659184],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.098486004495196, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_cb532d82eddcd1b16a4a574d347f62ca.bindTooltip(
+                `<div>
+                     SUKARASA | Bobot EV: 38.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc47d60323c4c9bcfdb6c8f3081a411d = L.circleMarker(
+                [-6.875161719190527, 107.57737275673631],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.397793028236704, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_cc47d60323c4c9bcfdb6c8f3081a411d.bindTooltip(
+                `<div>
+                     SARIJADI | Bobot EV: 77.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed0191e1ed901395f2e0cb5ba47fcf18 = L.circleMarker(
+                [-6.869743068661411, 107.59149547505656],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.084150054713105, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_ed0191e1ed901395f2e0cb5ba47fcf18.bindTooltip(
+                `<div>
+                     GEGERKALONG | Bobot EV: 66.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aad68dda1d04d53c458ef250afaaf09a = L.circleMarker(
+                [-6.850848850394961, 107.59321821858939],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1116790282097058, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_aad68dda1d04d53c458ef250afaaf09a.bindTooltip(
+                `<div>
+                     ISOLA | Bobot EV: 38.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dbdaf742709f5c7fa677b3dd67bb519e = L.circleMarker(
+                [-6.900568376379791, 107.6835408364399],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.139065664097911, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_dbdaf742709f5c7fa677b3dd67bb519e.bindTooltip(
+                `<div>
+                     SINDANG JAYA | Bobot EV: 39.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_add33c3c9ed0ebc696c6dcf94e97bd2e = L.circleMarker(
+                [-6.8983486435072505, 107.67255268880572],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5507308614444346, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_add33c3c9ed0ebc696c6dcf94e97bd2e.bindTooltip(
+                `<div>
+                     KARANG PAMULANG | Bobot EV: 50.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5351c1df5c97f031f6ee26292b0a9dca = L.circleMarker(
+                [-6.8973388168577205, 107.67905673081762],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.9809320474286527, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_5351c1df5c97f031f6ee26292b0a9dca.bindTooltip(
+                `<div>
+                     PASIR IMPUN | Bobot EV: 35.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f9b15068286e1d6c54eea2015d32b00 = L.circleMarker(
+                [-6.894018846196847, 107.66519469850806],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.2447020550748205, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_1f9b15068286e1d6c54eea2015d32b00.bindTooltip(
+                `<div>
+                     JATIHANDAP | Bobot EV: 72.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a365729eb7e7bf84efd2241c9f7e3513 = L.circleMarker(
+                [-6.921628035648865, 107.69803180491408],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_a365729eb7e7bf84efd2241c9f7e3513.bindTooltip(
+                `<div>
+                     SUKAMULYA | Bobot EV: 14.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0017d1124aa61bce622a31697967effc = L.circleMarker(
+                [-6.92724589408094, 107.6470423244377],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.10559910777417, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_0017d1124aa61bce622a31697967effc.bindTooltip(
+                `<div>
+                     KEBON JAYANTI | Bobot EV: 38.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_231d2a47ab92ffe7f113cb45c0604898 = L.circleMarker(
+                [-6.93747189487742, 107.64399099385103],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0863058761784994, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_231d2a47ab92ffe7f113cb45c0604898.bindTooltip(
+                `<div>
+                     KEBON KANGKUNG | Bobot EV: 38.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_84896409a349c12b0ce67117e31a160e = L.circleMarker(
+                [-6.913480864896263, 107.64782467056223],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.9180159019944667, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_84896409a349c12b0ce67117e31a160e.bindTooltip(
+                `<div>
+                     BABAKAN SURABAYA | Bobot EV: 61.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9e0d7eebe136d6ce763ede1f61428df = L.circleMarker(
+                [-6.909870564779744, 107.65701225815013],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6977084406088414, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_c9e0d7eebe136d6ce763ede1f61428df.bindTooltip(
+                `<div>
+                     ANTAPANI KULON | Bobot EV: 29.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03ef7915a323c27a29390d672b8bdc80 = L.circleMarker(
+                [-6.907706275491422, 107.64969066072626],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6060159672050256, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_03ef7915a323c27a29390d672b8bdc80.bindTooltip(
+                `<div>
+                     CICAHEUM | Bobot EV: 52.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb3cb728de192800f8e8581eec8a6fef = L.circleMarker(
+                [-6.923077793376989, 107.64958317589279],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.287569612488063, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_bb3cb728de192800f8e8581eec8a6fef.bindTooltip(
+                `<div>
+                     BABAKAN SARI | Bobot EV: 111.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e7694755613abc60b6a70206f8e2875 = L.circleMarker(
+                [-6.9349658732874415, 107.65230288887948],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.522597142800224, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_0e7694755613abc60b6a70206f8e2875.bindTooltip(
+                `<div>
+                     SUKAPURA | Bobot EV: 81.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5880067a6d4e7b052724f9c06b7de76e = L.circleMarker(
+                [-6.923444001580968, 107.65975396719465],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.107568917580284, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_5880067a6d4e7b052724f9c06b7de76e.bindTooltip(
+                `<div>
+                     ANTAPANI KIDUL | Bobot EV: 67.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_574681917e046d28e05a73a789b1d41a = L.circleMarker(
+                [-6.909681468028851, 107.66520196535005],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.612736115418407, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_574681917e046d28e05a73a789b1d41a.bindTooltip(
+                `<div>
+                     ANTAPANI WETAN | Bobot EV: 52.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b21254b269ce38711cba6cbc3d518bbd = L.circleMarker(
+                [-6.913472185104159, 107.67397009080287],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.831425782337468, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_b21254b269ce38711cba6cbc3d518bbd.bindTooltip(
+                `<div>
+                     SUKAMISKIN | Bobot EV: 58.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72a91f14d5c7b914157d27cdfee7ab8b = L.circleMarker(
+                [-6.961081420256088, 107.71091903128153],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_72a91f14d5c7b914157d27cdfee7ab8b.bindTooltip(
+                `<div>
+                     RANCANUMPANG | Bobot EV: 14.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8e136c3b24ce0a6773832946509ba8f = L.circleMarker(
+                [-6.923582324575557, 107.68039450817557],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.244681470109476, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_a8e136c3b24ce0a6773832946509ba8f.bindTooltip(
+                `<div>
+                     CISARANTEN KULON | Bobot EV: 72.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_84779c177ad57a76ff47076bd6758c70 = L.circleMarker(
+                [-6.92259601361211, 107.68807317194201],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0848166291358754, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_84779c177ad57a76ff47076bd6758c70.bindTooltip(
+                `<div>
+                     CISARANTEN WETAN | Bobot EV: 17.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5461889f4108c8204838073e5112ebd1 = L.circleMarker(
+                [-6.94575913689375, 107.70289634125484],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_5461889f4108c8204838073e5112ebd1.bindTooltip(
+                `<div>
+                     CIMINCRANG | Bobot EV: 11.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e09c84bdf25725b6922a7281de001768 = L.circleMarker(
+                [-6.911321722390263, 107.68572806182156],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.8619482211588063, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_e09c84bdf25725b6922a7281de001768.bindTooltip(
+                `<div>
+                     CISARANTEN BINA HARAPAN | Bobot EV: 32.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_869436b0d7f2084cee0b9303e1bc9a6b = L.circleMarker(
+                [-6.936719792746576, 107.68886838030012],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2540768183251796, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_869436b0d7f2084cee0b9303e1bc9a6b.bindTooltip(
+                `<div>
+                     BABAKAN PENGHULU | Bobot EV: 20.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45290cf49ab0596b230179e03d233c0f = L.circleMarker(
+                [-6.922317382564813, 107.69331013896786],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.09246048842841, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_45290cf49ab0596b230179e03d233c0f.bindTooltip(
+                `<div>
+                     PAKEMITAN | Bobot EV: 17.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ae4ac9a922b63679b0efc862597267c = L.circleMarker(
+                [-6.95181228666183, 107.69445745468568],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.784695492275589, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_7ae4ac9a922b63679b0efc862597267c.bindTooltip(
+                `<div>
+                     CISARANTEN KIDUL | Bobot EV: 57.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb4213ef3125d857c85163380e0f2ab1 = L.circleMarker(
+                [-6.921441114858354, 107.66575478960335],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.976060177791277, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_eb4213ef3125d857c85163380e0f2ab1.bindTooltip(
+                `<div>
+                     ANTAPANI TENGAH | Bobot EV: 63.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c84ea7d2ac5b430215c2866ce892c6b = L.circleMarker(
+                [-6.929194634671887, 107.6724538720584],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7130016590062276, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_2c84ea7d2ac5b430215c2866ce892c6b.bindTooltip(
+                `<div>
+                     CISARANTEN ENDAH | Bobot EV: 55.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_384c1e62a4226b6d6e377ed311e59277 = L.circleMarker(
+                [-6.947005078284372, 107.6668993926935],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.782425046292986, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_384c1e62a4226b6d6e377ed311e59277.bindTooltip(
+                `<div>
+                     MANJAHLEGA | Bobot EV: 57.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6cccb913f80b826ad33b08710daa9638 = L.circleMarker(
+                [-6.946846436030438, 107.67516439253794],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.108022193554306, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_6cccb913f80b826ad33b08710daa9638.bindTooltip(
+                `<div>
+                     CIPAMOKOLAN | Bobot EV: 67.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cbe97987b49d32a7946c838e2f889f7e = L.circleMarker(
+                [-6.954468324891983, 107.65591342329289],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.274361492244084, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_cbe97987b49d32a7946c838e2f889f7e.bindTooltip(
+                `<div>
+                     MARGASARI | Bobot EV: 111.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a6d7daa80ec415aa9b9d605c1736878 = L.circleMarker(
+                [-6.96521213337093, 107.69445661390266],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.873199471744074, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_7a6d7daa80ec415aa9b9d605c1736878.bindTooltip(
+                `<div>
+                     RANCABOLANG | Bobot EV: 33.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2fe300825c542d9d539279af309d35cc = L.circleMarker(
+                [-6.927005503619211, 107.59239864937953],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5213820970347545, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_2fe300825c542d9d539279af309d35cc.bindTooltip(
+                `<div>
+                     BABAKAN TAROGONG | Bobot EV: 81.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d188311204c7a4423174163cef820e3 = L.circleMarker(
+                [-6.910180913661414, 107.69793934262144],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3481658739784463, "stroke": true, "weight": 1}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            circle_marker_8d188311204c7a4423174163cef820e3.bindTooltip(
+                `<div>
+                     CIGENDING | Bobot EV: 44.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1ce3ac595be40e5d709af92826375a5a = L.marker(
+                [-6.918003183084254, 107.57310905527882],
+                {
+}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            var icon_52e68e029ee3fada72903b151a6f43b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc7e35c56f3ed29d96d5ac5c2cffe163 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9d3ed04d1d17f8f2f3b0f4ecda34ecb = $(`<div id="html_e9d3ed04d1d17f8f2f3b0f4ecda34ecb" style="width: 100.0%; height: 100.0%;"><b>Kantor Kelurahan Cibuntu</b><br>Klaster: C_Kantor<br>Candidate ID: 19</div>`)[0];
+                popup_bc7e35c56f3ed29d96d5ac5c2cffe163.setContent(html_e9d3ed04d1d17f8f2f3b0f4ecda34ecb);
+            
+        
+
+        marker_1ce3ac595be40e5d709af92826375a5a.bindPopup(popup_bc7e35c56f3ed29d96d5ac5c2cffe163)
+        ;
+
+        
+    
+    
+            marker_1ce3ac595be40e5d709af92826375a5a.bindTooltip(
+                `<div>
+                     Kantor Kelurahan Cibuntu (C_Kantor)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ce3ac595be40e5d709af92826375a5a.setIcon(icon_52e68e029ee3fada72903b151a6f43b3);
+            
+    
+            var marker_c608eb42fe20db1e4fa008be85bd7514 = L.marker(
+                [-6.904171499999996, 107.6650947],
+                {
+}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            var icon_e7d71dafe5efb8ebec01f0031bbeb097 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec82a64e3949e0a0317464d4d226e3fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35fc7f544261fb711d2bc6c3f632f645 = $(`<div id="html_35fc7f544261fb711d2bc6c3f632f645" style="width: 100.0%; height: 100.0%;"><b>Pertamina</b><br>Klaster: A_SPBU<br>Candidate ID: 41</div>`)[0];
+                popup_ec82a64e3949e0a0317464d4d226e3fc.setContent(html_35fc7f544261fb711d2bc6c3f632f645);
+            
+        
+
+        marker_c608eb42fe20db1e4fa008be85bd7514.bindPopup(popup_ec82a64e3949e0a0317464d4d226e3fc)
+        ;
+
+        
+    
+    
+            marker_c608eb42fe20db1e4fa008be85bd7514.bindTooltip(
+                `<div>
+                     Pertamina (A_SPBU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c608eb42fe20db1e4fa008be85bd7514.setIcon(icon_e7d71dafe5efb8ebec01f0031bbeb097);
+            
+    
+            var marker_f524dd23465e943c60722ebade24fd74 = L.marker(
+                [-6.957874000000007, 107.657319],
+                {
+}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            var icon_f8c18a26a0069154accb183a415eb7f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18f7ac93e91e90ac7be91b3e899d6f4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fafe88f1d2217648e09932060325efc = $(`<div id="html_7fafe88f1d2217648e09932060325efc" style="width: 100.0%; height: 100.0%;"><b>Pos Bandung Ciwastra</b><br>Klaster: C_Kantor<br>Candidate ID: 43</div>`)[0];
+                popup_18f7ac93e91e90ac7be91b3e899d6f4e.setContent(html_7fafe88f1d2217648e09932060325efc);
+            
+        
+
+        marker_f524dd23465e943c60722ebade24fd74.bindPopup(popup_18f7ac93e91e90ac7be91b3e899d6f4e)
+        ;
+
+        
+    
+    
+            marker_f524dd23465e943c60722ebade24fd74.bindTooltip(
+                `<div>
+                     Pos Bandung Ciwastra (C_Kantor)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f524dd23465e943c60722ebade24fd74.setIcon(icon_f8c18a26a0069154accb183a415eb7f4);
+            
+    
+            var marker_e8d50cea76d4f13a7b6859750128e047 = L.marker(
+                [-6.922388900000001, 107.6440384],
+                {
+}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            var icon_e008566fbc894cea631657963fbea1d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b97af3730da44b3a583af19fa97bd4be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31cc8ed520628417b5936fcb6a2bdd1c = $(`<div id="html_31cc8ed520628417b5936fcb6a2bdd1c" style="width: 100.0%; height: 100.0%;"><b>Pertamina</b><br>Klaster: A_SPBU<br>Candidate ID: 67</div>`)[0];
+                popup_b97af3730da44b3a583af19fa97bd4be.setContent(html_31cc8ed520628417b5936fcb6a2bdd1c);
+            
+        
+
+        marker_e8d50cea76d4f13a7b6859750128e047.bindPopup(popup_b97af3730da44b3a583af19fa97bd4be)
+        ;
+
+        
+    
+    
+            marker_e8d50cea76d4f13a7b6859750128e047.bindTooltip(
+                `<div>
+                     Pertamina (A_SPBU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e8d50cea76d4f13a7b6859750128e047.setIcon(icon_e008566fbc894cea631657963fbea1d2);
+            
+    
+            var marker_181c76f8cdb93b5e7c9ff406d2d67abf = L.marker(
+                [-6.890806120999996, 107.6165886],
+                {
+}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            var icon_bb8d7f5b0cbc5d5c251e232a6c1c37bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daee71ca48410d99362d8a95f8426d06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c2aca3949dc953cd7e428c2ca0c0ec0 = $(`<div id="html_4c2aca3949dc953cd7e428c2ca0c0ec0" style="width: 100.0%; height: 100.0%;"><b>Pertamina</b><br>Klaster: A_SPBU<br>Candidate ID: 79</div>`)[0];
+                popup_daee71ca48410d99362d8a95f8426d06.setContent(html_4c2aca3949dc953cd7e428c2ca0c0ec0);
+            
+        
+
+        marker_181c76f8cdb93b5e7c9ff406d2d67abf.bindPopup(popup_daee71ca48410d99362d8a95f8426d06)
+        ;
+
+        
+    
+    
+            marker_181c76f8cdb93b5e7c9ff406d2d67abf.bindTooltip(
+                `<div>
+                     Pertamina (A_SPBU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_181c76f8cdb93b5e7c9ff406d2d67abf.setIcon(icon_bb8d7f5b0cbc5d5c251e232a6c1c37bf);
+            
+    
+            var marker_b9909e42e863d9f6e92b9cfda5014f70 = L.marker(
+                [-6.92834112005956, 107.622761834704],
+                {
+}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            var icon_56f4c3708939f538f71269e2de4393a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_760f80d12d7e97c9d178df79c8bdb984 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_faaac5ac2ba7c0bce9af30c25b015e97 = $(`<div id="html_faaac5ac2ba7c0bce9af30c25b015e97" style="width: 100.0%; height: 100.0%;"><b>Kantor Kecamatan Lengkong</b><br>Klaster: C_Kantor<br>Candidate ID: 128</div>`)[0];
+                popup_760f80d12d7e97c9d178df79c8bdb984.setContent(html_faaac5ac2ba7c0bce9af30c25b015e97);
+            
+        
+
+        marker_b9909e42e863d9f6e92b9cfda5014f70.bindPopup(popup_760f80d12d7e97c9d178df79c8bdb984)
+        ;
+
+        
+    
+    
+            marker_b9909e42e863d9f6e92b9cfda5014f70.bindTooltip(
+                `<div>
+                     Kantor Kecamatan Lengkong (C_Kantor)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b9909e42e863d9f6e92b9cfda5014f70.setIcon(icon_56f4c3708939f538f71269e2de4393a9);
+            
+    
+            var marker_ca188ca64198873f34fe57993da6303b = L.marker(
+                [-6.906023654999999, 107.5978357],
+                {
+}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            var icon_58d1a2e97ce8b3eceaee3178471d51d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2e619811df52bb2d2365415a6ae55fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c11d127b251f3e7fe7098fd38577c89 = $(`<div id="html_2c11d127b251f3e7fe7098fd38577c89" style="width: 100.0%; height: 100.0%;"><b>Living Plaza</b><br>Klaster: B_Mall<br>Candidate ID: 139</div>`)[0];
+                popup_c2e619811df52bb2d2365415a6ae55fd.setContent(html_2c11d127b251f3e7fe7098fd38577c89);
+            
+        
+
+        marker_ca188ca64198873f34fe57993da6303b.bindPopup(popup_c2e619811df52bb2d2365415a6ae55fd)
+        ;
+
+        
+    
+    
+            marker_ca188ca64198873f34fe57993da6303b.bindTooltip(
+                `<div>
+                     Living Plaza (B_Mall)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca188ca64198873f34fe57993da6303b.setIcon(icon_58d1a2e97ce8b3eceaee3178471d51d8);
+            
+    
+            var marker_2717101d88370fb989081c76573d81f2 = L.marker(
+                [-6.91708804649409, 107.70628684453128],
+                {
+}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            var icon_2dcec1f39e3149604d424c9dc84e0a21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b21e040d08a61c1bde8398d9c20a2921 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2d8a506cd04ea5c4c477fde3b46e7ad = $(`<div id="html_f2d8a506cd04ea5c4c477fde3b46e7ad" style="width: 100.0%; height: 100.0%;"><b>Kelurahan Pasanggrahan</b><br>Klaster: C_Kantor<br>Candidate ID: 184</div>`)[0];
+                popup_b21e040d08a61c1bde8398d9c20a2921.setContent(html_f2d8a506cd04ea5c4c477fde3b46e7ad);
+            
+        
+
+        marker_2717101d88370fb989081c76573d81f2.bindPopup(popup_b21e040d08a61c1bde8398d9c20a2921)
+        ;
+
+        
+    
+    
+            marker_2717101d88370fb989081c76573d81f2.bindTooltip(
+                `<div>
+                     Kelurahan Pasanggrahan (C_Kantor)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2717101d88370fb989081c76573d81f2.setIcon(icon_2dcec1f39e3149604d424c9dc84e0a21);
+            
+    
+            var marker_c4961a1a04d52d10806cf9dae9c045f5 = L.marker(
+                [-6.943496488675375, 107.59184541004107],
+                {
+}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            var icon_4476e1b5f90716a34abf3a75b4e96fb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59a2d03267157bdf82f739f82125e9a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b45c99a9ff2d28c9f3e8229f7aff835 = $(`<div id="html_5b45c99a9ff2d28c9f3e8229f7aff835" style="width: 100.0%; height: 100.0%;"><b>RSUD Bandung Kiwari</b><br>Klaster: E_RumahSakit<br>Candidate ID: 223</div>`)[0];
+                popup_59a2d03267157bdf82f739f82125e9a7.setContent(html_5b45c99a9ff2d28c9f3e8229f7aff835);
+            
+        
+
+        marker_c4961a1a04d52d10806cf9dae9c045f5.bindPopup(popup_59a2d03267157bdf82f739f82125e9a7)
+        ;
+
+        
+    
+    
+            marker_c4961a1a04d52d10806cf9dae9c045f5.bindTooltip(
+                `<div>
+                     RSUD Bandung Kiwari (E_RumahSakit)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c4961a1a04d52d10806cf9dae9c045f5.setIcon(icon_4476e1b5f90716a34abf3a75b4e96fb2);
+            
+    
+            var marker_23cbd3386d187ff3813fe7ec55a90973 = L.marker(
+                [-6.880703899999995, 107.5829931],
+                {
+}
+            ).addTo(map_564d2a2895cb51596d526e54bbee0425);
+        
+    
+            var icon_5c9107597585a96c8296728481b6f35a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4878218cc2ed8766216836189f14a053 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3568005314d068299ca8c16210847fb = $(`<div id="html_e3568005314d068299ca8c16210847fb" style="width: 100.0%; height: 100.0%;"><b>Setrasari Mall</b><br>Klaster: B_Mall<br>Candidate ID: 254</div>`)[0];
+                popup_4878218cc2ed8766216836189f14a053.setContent(html_e3568005314d068299ca8c16210847fb);
+            
+        
+
+        marker_23cbd3386d187ff3813fe7ec55a90973.bindPopup(popup_4878218cc2ed8766216836189f14a053)
+        ;
+
+        
+    
+    
+            marker_23cbd3386d187ff3813fe7ec55a90973.bindTooltip(
+                `<div>
+                     Setrasari Mall (B_Mall)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_23cbd3386d187ff3813fe7ec55a90973.setIcon(icon_5c9107597585a96c8296728481b6f35a);
+            
+</script>
+</html>

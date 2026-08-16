@@ -1,68 +1,96 @@
-# SPKLU Bandung — Akuisisi Data Spasial (Tahap 2)
+# Optimasi Lokasi SPKLU Kota Bandung — Model P-Median
 
-Project ini menjalankan Tahap B, C, D dari Panduan Akuisisi Data Spasial:
-jaringan jalan, kandidat lokasi SPKLU (Himpunan J), dan titik permintaan (Himpunan I).
+Notebook ini menjalankan seluruh alur optimasi lokasi Stasiun Pengisian Kendaraan Listrik Umum (SPKLU) di Kota Bandung menggunakan model P-Median, dengan bobot demand berbasis estimasi kendaraan listrik roda empat pada penduduk usia 25–60 tahun.
 
-## 1. Setup environment
+## Model Objektif
 
-Kenapa venv? `osmnx`/`geopandas` menarik dependency geospasial (GDAL, PROJ, GEOS)
-yang riskan bentrok versi kalau diinstall global. Isolasi per-project lebih aman.
+$$\min \sum_i\sum_j w_i \, d_{ij} \, x_{ij}$$
+
+dengan:
+- $w_i$ = estimasi jumlah EV berbobot demografi usia 25–60 tahun pada kelurahan $i$
+- $d_{ij}$ = jarak jaringan jalan dari titik permintaan $i$ ke kandidat lokasi $j$
+- $x_{ij}$ = 1 jika permintaan $i$ dilayani fasilitas $j$, 0 jika tidak
+
+Kendala: setiap titik permintaan dilayani tepat satu fasilitas, fasilitas hanya bisa melayani jika dibuka, dan jumlah fasilitas yang dibuka = $p$.
+
+## Struktur Folder
+
+Letakkan notebook di folder `notebooks/`, dengan struktur project sebagai berikut:
+
+```text
+spklu_bandung/
+├── data/
+│   ├── raw/
+│   │   ├── Kendaraan Listrik Bdg Raya.xlsx
+│   │   ├── jumlah_penduduk_kota_bandung_berdasarkan_kelompok_u_1.xlsx
+│   │   ├── penduduk_kelurahan_bandung.csv
+│   │   └── kelurahan_bandung.json
+│   └── processed/
+│       ├── kandidat_J_gabungan_final.csv
+│       └── bandung_drive_utm48s.graphml
+├── notebooks/
+│   └── 04_pmedian_spklu_lengkap_usia_25_60.ipynb
+└── outputs/
+    └── pmedian_usia_25_60/        # dibuat otomatis oleh notebook
+```
+
+## Dependencies
 
 ```bash
-# di dalam folder spklu_bandung/
-python3 -m venv venv
-
-# aktifkan
-source venv/bin/activate        # Mac/Linux
-venv\Scripts\activate           # Windows (cmd)
-venv\Scripts\Activate.ps1       # Windows (PowerShell)
-
-pip install -r requirements.txt
+pip install pulp numpy pandas geopandas networkx osmnx folium openpyxl
 ```
 
-Kalau nanti selesai kerja, keluar dari venv dengan `deactivate`.
+Kalau `pulp` belum tersedia di kernel, jalankan `%pip install pulp` sekali lalu restart kernel.
 
-## 2. Urutan menjalankan
+Solver ILP yang dipakai: **CBC** (via `PULP_CBC_CMD`, bundled dengan `pulp`).
 
-```bash
-cd scripts
-python 01_download_road_network.py      # ~2-5 menit, tergantung koneksi
-python 02_download_candidates.py        # butuh output step 1
-python 03_process_demand_points.py      # butuh output step 1 + CSV BPS (lihat di bawah)
+## Alur Notebook
+
+| # | Tahap | Cell |
+|---|---|---|
+| 1 | Baca jumlah EV roda empat per wilayah SAMSAT | 4 |
+| 2 | Estimasi & distribusi penduduk usia 25–60 dari kecamatan ke kelurahan | 6–8 |
+| 3 | Bentuk Himpunan I (titik permintaan per kelurahan + bobot EV) | 8–10 |
+| 4 | Baca & bersihkan Himpunan J (kandidat lokasi SPKLU) | 12–14 |
+| 5 | Snap I & J ke jaringan jalan, hitung matriks jarak (Dijkstra) | 14–16 |
+| 6 | Jalankan model P-Median (ILP, solver CBC) untuk tiap $p$ di `P_SCENARIOS` | 18–20 |
+| 7 | Simpan lokasi terpilih, assignment, ringkasan skenario | 22, 26 |
+| 8 | Buat peta interaktif (folium) untuk skenario `P_MAP` | 24 |
+
+## Konfigurasi Utama
+
+Di **cell 2** (setup):
+```python
+P_SCENARIOS = [5, 10, 15, 20]   # daftar nilai p yang mau diuji
 ```
 
-### Sebelum step 3: download data populasi manual
-
-Portal opendata.bandung.go.id render datanya lewat JavaScript, jadi tidak bisa
-di-download otomatis lewat kode. Lakukan sekali secara manual:
-
-1. Buka https://opendata.bandung.go.id/dataset/jumlah-penduduk-kota-bandung-berdasarkan-kelurahan
-2. Download resource-nya sebagai CSV
-3. Simpan sebagai `data/raw/penduduk_kelurahan_bandung.csv`
-
-## 3. Struktur output
-
-```
-data/
-  raw/
-    bandung_drive_raw.graphml
-    penduduk_kelurahan_bandung.csv      <- kamu taruh manual
-  processed/
-    bandung_drive_utm48s.graphml        <- Himpunan graf G(V,E) final
-    road_network_preview.png            <- cek visual cakupan area
-    candidates_J.geojson / .csv         <- Himpunan J
-    demand_points_I.geojson / .csv      <- Himpunan I
+Di **cell 24** (peta):
+```python
+P_MAP = 10   # skenario p yang ingin divisualisasikan ke HTML
 ```
 
-## 4. Catatan penting
+Ubah nilai-nilai ini sebelum re-run kalau mau menambah skenario atau ganti fokus visualisasi peta.
 
-- **Ground truth SPKLU eksisting** (untuk validasi) TIDAK di-otomatisasi di sini.
-  "Charge.IN" adalah fitur di dalam app PLN Mobile, bukan platform dengan API publik,
-  jadi tidak bisa di-scrape langsung. Opsi realistis:
-  - cari tag `amenity=charging_station` di OSM buat Bandung (banyak sudah dipetakan komunitas)
-  - cek cakupan openchargemap.org (punya API publik, tapi cakupan Indonesia belum tentu lengkap)
-  - kompilasi manual dari app PLN Mobile / Google Maps untuk area Bandung
-- Kolom `addr_kelurahan` di step 3 sering kosong karena banyak building di OSM
-  tidak punya tag `addr:suburb`. Untuk hasil yang lebih rapi, ganti pendekatan
-  join populasi dari "match nama kelurahan" menjadi **spatial join** pakai polygon
-  batas kelurahan (bisa didapat dari OSM `boundary=administrative` atau shapefile BPS).
+## Cara Menjalankan
+
+1. Pastikan struktur folder & data mentah sudah sesuai (lihat di atas).
+2. Jalankan notebook dari cell paling atas secara berurutan (`Run All`), **atau**:
+   - Kalau cuma mau ubah daftar skenario `p` tanpa ubah data mentah, cukup edit cell 2 lalu jalankan ulang **cell 2 → 20 → 22 → 26** (variabel `demand`, `candidates`, `distance_matrix` tetap ada di memory kernel selama tidak di-restart).
+   - Kalau cuma mau generate ulang peta untuk `p` yang beda, edit `P_MAP` di cell 24 lalu jalankan ulang cell itu saja.
+3. Output tersimpan otomatis ke `outputs/pmedian_usia_25_60/`, antara lain:
+   - `ringkasan_skenario_pmedian.csv` — ringkasan objective, jarak rata-rata/maksimum, dan waktu solver per skenario $p$
+   - `peta_pmedian_p{N}.html` — peta interaktif untuk skenario $p=N$
+   - detail lokasi terpilih & assignment per skenario
+
+## Validasi yang Sudah Diperiksa
+
+- Total bobot EV Himpunan I = 7.136 (sama persis dengan sumber data SAMSAT)
+- 151 kelurahan lengkap terpadankan ke poligon geografis
+- 272 kandidat lokasi unik (dari 282 awal, dideduplikasi berdasarkan snap ke node jalan)
+- 0 pasangan jarak tak berhingga (`inf`) pada matriks jarak
+- Seluruh skenario `p` mencapai status **Optimal** pada solver CBC
+
+## Catatan Data
+
+- Dua pasang nama kelurahan pada data penduduk vs GeoJSON dipadankan otomatis via fuzzy matching (`difflib.SequenceMatcher`, ambang 0,70) dan telah diverifikasi manual ke sumber resmi (Pemkot Bandung/BPS/Kecamatan): `CIMINCRANG` ↔ `CIMENCRANG`, dan `HUSENSASTRANEGARA` ↔ `HUSEINSASTRANEGARA`.
+- Snap ke jaringan jalan menggunakan komponen *strongly connected* terbesar dari graf OSMnx untuk menghindari jarak tak berhingga akibat jalan satu arah yang terisolasi.
